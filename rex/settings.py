@@ -25,7 +25,7 @@ SECRET_KEY = 'drhva+87=*r5ow182_5_pvt0eyqmc#wrxoae1eq*+r*ip=qcys'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['139.59.179.88', '127.0.0.1']
 
 
 # Application definition

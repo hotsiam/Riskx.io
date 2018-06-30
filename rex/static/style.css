@@ -839,6 +839,7 @@ h6{
 	text-align:left;
 }
 .intro__title{
+	width:700px;
 	position: relative;
     top: 20px;
 	padding:0 0 15px 0;
@@ -858,8 +859,9 @@ h6{
 }
 .intro__title__words-animation{
 	position:relative;
-	width:250px;
+	width:360px;
 	float:left;
+	letter-spacing:-1px;
 }
 .word {
   position: absolute;
@@ -2468,7 +2470,7 @@ ul.grid__list--fmenu li a:hover {
 /*===============================================*/
 /* Small desktop and laptops 1800 px		 */
 /*===============================================*/
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 2800px) {
 .intro__title{
 	font-size:52px;
 }
