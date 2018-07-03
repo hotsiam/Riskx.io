@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------
-[Main Stylesheet]
+[Main Stylesheet] - The true sheet
 
 Author:	SmartTemplates
 Version:	1.0
@@ -425,13 +425,13 @@ h6{
 
 /* ELEMENT - section__description */
 .section__description{
-	font-size:18px;
+	font-size:12px;
 	line-height:32px;
 }
 /* ELEMENT MODIFIER section__description  */
 .section__description--centered{
 	position: relative;
-    top: 80px;
+    top: 50px;
 	width:60%;
 	margin:auto;
 	text-align:center;
@@ -668,6 +668,7 @@ h6{
 }
 .grid__text span{
 	font-weight:700;
+	font-size:24px;
 }
 
 /* ELEMENT  grid__more  */
@@ -2561,10 +2562,7 @@ overflow-y:scroll;
 background-color:#fff;
 }
 .header__logo-title{
-font-size:20px;
-}
-.menu-open .header__logo-title, .header--sticky .header__logo-title{
-color:#000;
+	font-size:20px;
 }
 .header__menu {
 width: 100%;
@@ -2615,8 +2613,6 @@ width:100%;
 	-webkit-transition: none;
 	-moz-transition: none;
 	transition: none;
-	color:#967eff;
-	border:1px #967eff solid;
 }
 .header__menu > ul > li.header__btn--login > a {
 	width:80%;
@@ -2673,13 +2669,7 @@ transition: none;visibility:visible;top:auto;}
 .menu-button {
  display: block;
 }
-.menu-button {
-    border-bottom: 1px solid #000;
-}
-.menu-button::before {
-    border-top: 1px double #000;
-    border-bottom: 1px solid #000;
-}
+
  .header__menu .submenu-button {
  position: absolute;
  z-index: 99;
@@ -2784,35 +2774,29 @@ ul.grid__list--fmenu li {
 /*========================================*/
 /*  INTRO 	 */
 /*---------------*/
-.section--intro{
-	background-image:none;
-	background-color:#fff;
-}
 .intro{
 	width:100%;
 	padding:15% 0 0 0;
-
 }
 .intro__title{
 	padding:0 0 25px 0;
-	font-size:44px;
+	font-size:60px;
 	line-height:55px;
-}
-.intro__title__words-animation{
-	width:150px;
+	width:400px;
 }
 .intro__subtitle{
 	font-size:22px;
 	line-height:24px;
 	padding:0 0 20px 0;
+	width:300px;
 }
 .intro__description{
 	font-size:16px;
 	padding:0 0 20px 0;
 }
 .intro__buttons{
-	padding:20px 0 0 0;
-
+	 padding:20px 0 0 0;
+	 top:110px;
 }
 .btn{
 	padding:10px 30px; 
@@ -2830,18 +2814,19 @@ ul.grid__list--fmenu li {
 	bottom:0;
 	left:5%;
 	z-index:222;
+	top:600px;
 }
 .intro-animation img{
   max-width:100%;
 }
-svg.svg-intro-bottom {
-  display:none;
-}
-svg.svg-features-top {
-  display:none;
-}
 /*  ABOUT 	 */
 /*---------------*/
+.section__content--about{
+	padding:30px 0;
+}
+.grid--about .grid__item{
+	margin-bottom:30px;
+}
 .grid--about .grid__title{
 	font-size:28px;
 	line-height:36px;
@@ -2860,16 +2845,8 @@ svg.svg-features-bottom {
   height: 40px;
 }
 
-/*  HOW IT WORKS 	 */
-/*---------------*/
-.hiw-titles__slide{
-	 width: calc(100% / 3);
-	 padding:10px 0; 
-	 margin:0 0 10px 0;
-}
-.hiw-buttons button{
-	margin-bottom:10px;
-}
+
+
 /*  PRICING 	 */
 /*---------------*/
 .pricing__switcher{
@@ -2894,101 +2871,26 @@ svg.svg-features-bottom {
 }
 /*  TESTIMONIALS 	 */
 /*---------------*/
- .section--testimonials{
-	-webkit-background-size: 90% auto;
-	-moz-background-size:  90% auto;
-	-o-background-size:  90% auto;
-	background-size:  90% auto;
-	background-position:center 40px;
-}  
  .testimonials{
-	width: 100%;
-	height: auto;
-	padding:0;
+  margin:0;
+  padding:40px 0 80px 0; 
 }
-.testimonials__item{
-	position:relative;
-}
-.testimonials__item:nth-child(1){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(2){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(3){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(4){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(5){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(6){
-	top:auto;
-	left:auto;
-}
-.testimonials__item:nth-child(7){
-	top:auto;
-	left:auto;
-}
-.testimonials__item--x2 .testimonials__thumb img{
-	width:40px;
-}
-.testimonials__item--x3 .testimonials__thumb img{
-	width:40px;
-}
-.testimonials__item--x4 .testimonials__thumb img{
-	width:40px;
-}
-.testimonials__content{
-    opacity: 1; 
-	height:auto;
-	width:180px;
-	padding:20px;
-    overflow: hidden;
-}
-.testimonials__item--x2 .testimonials__content{
-	-webkit-transform: translateX(70px) translateY(-50px);
-	transform: translateX(70px) translateY(-50px);
-}
-.testimonials__item--x3 .testimonials__content{
-	-webkit-transform: translateX(70px) translateY(-50px);
-	transform: translateX(70px) translateY(-50px);
-}
-.testimonials__item--x4 .testimonials__content{
-	-webkit-transform: translateX(70px) translateY(-50px);
-	transform: translateX(70px) translateY(-50px);
-}
-.testimonials__item:hover .testimonials__content{
-	 box-shadow: none;
-	-moz-box-shadow: none;
-	-webkit-box-shadow:none;
-	width:180px;
-}
-.testimonials__item:hover .testimonials__thumb img{
-	 box-shadow: 0 0 10px 0px rgba(0,0,0,0.18);
-	-moz-box-shadow: 0 0 10px 0px rgba(0,0,0,0.18);
-	-webkit-box-shadow: 0 0 10px 0px rgba(0,0,0,0.18);
-	transform: scale(1);
+.testimonials__slide {
+	text-align: center;
+	width:100%;
+	float:left;
 }
 .testimonials__text p{
+	padding:0 0 20px 0;
 	font-size:14px;
-	line-height:20px;
+	line-height:22px;
 }
 .testimonials__source{
-	font-size:18px;
-	padding:0 0 5px 0;
-	line-height:20px;
+	font-weight:700;
+	font-size:12px;
 }
 .testimonials__source a{
-	font-size:12px;
-	font-weight:400;
+	padding:0 5px;
 }
 /*  CONTACT 	 */
 /*---------------*/
@@ -3009,7 +2911,17 @@ svg.svg-features-bottom {
 .svg-form-left{
 	display:none;
 }
-
+/*  CTA 	 */
+/*---------------*/
+.section--cta{
+	padding:20px 0;
+}
+svg.svg-cta-top {
+	height: 20px;
+}
+svg.svg-cta-bottom {
+	height: 20px;
+}
 /*  Modal	 */
 /*---------------*/
 .modal__wrapper {
@@ -3046,56 +2958,25 @@ svg.svg-features-bottom {
 	max-width:100%;
 	max-height:auto;
 }
+.grid--support{
+	display: block;
+	background-color:#ffba00;
+}
+.grid--support .grid__item.grid__item--padding{
+	background:none;
+	width: 90%;
+	padding:5%;
+}
+.svg-support-bottom{
+	display:none;
+}
 .grid--features .grid__item{
 	 margin-right:0px;
 	 margin-bottom:0px; 
 	 width: 90%;
 	 padding:5%;
 }
-.grid--support .grid__item{
-	 margin-right:0px;
-	 margin-bottom:0px; 
-	 width: 90%;
-	 padding:5%;
-}
-.grid--support .grid__item.grid__item--padding{
-	 margin-right:0px;
-	 margin-bottom:0px; 
-	 width: 90%;
-	 padding:5%;
-}
-.hiw-content__slide{
-	height:auto;
-}
-.hiw-content__slide pre{
- white-space: pre-wrap;       
- white-space: -moz-pre-wrap;  
- white-space: -pre-wrap;     
- white-space: -o-pre-wrap;   
- word-wrap: break-word;
-}
 
- .section--cta{
-	padding-bottom:0px;
-}
-.svg-cta-bottom{
-	display:none;
-}
-.grid--cta{
-	display: block;
-}
-.grid__title--cta {
-    font-size: 36px;
-}
-.grid--cta .grid__item{
-	width: 90%;
-	padding:0 5%;
-}
-.grid--cta .grid__more{
-	padding: 20px 32px;
-}
-
- 
 }
 /*===============================================*/
 /* Small Mobile under 600	  					 */
@@ -3103,14 +2984,8 @@ svg.svg-features-bottom {
 @media screen and (max-width: 600px) {
 .intro__title{
 	padding:5% 0 10px 0;
-	font-size:24px;
+	font-size:30px;
 	line-height:34px;
-}
-.intro__title strong{
-	padding:0 5px 0 0;
-}
-.intro__title__words-animation{
-	width:100px;
 }
 .intro__subtitle{
 	font-size:14px;
@@ -3124,6 +2999,6 @@ svg.svg-features-bottom {
 	padding:8px 15px; 
 }
 .btn--play{
-	padding-right:40px; 
+	padding-right:50px; 
 }
 }
