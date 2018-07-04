@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'drhva+87=*r5ow182_5_pvt0eyqmc#wrxoae1eq*+r*ip=qcys'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['139.59.179.88', 'riskx.io', 'www.riskx.io']
+ALLOWED_HOSTS = ['139.59.179.88', '127.0.0.1', 'riskx.io', 'www.riskx.io']
 
 
 # Application definition
