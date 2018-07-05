@@ -1569,26 +1569,30 @@ svg.svg-features-top {
 /*  7.7 CUSTOM SECTION - HOW IT WORKS (HIW) 			 */
 /*===============================================*/
 .section--hiw{
-	position:center;
+	position:left;
 	background-color: #f7f8f9;
 }
 .hiw{
 	margin-left: auto;
     margin-right: auto;
-	width:30%;
+	width:40%;
 	overflow:hidden;
-	text-align:center;
+	text-align:left;
+	height:400px;
 }
 .hiw-titles{
 	border-bottom:1px #ddd solid;
 	margin:0 0 40px 0;
+	width:600px;
+	text-align:left;
+	left:150px;
 }
 .hiw-titles__slide{
 	 width: calc(100% / 5);
 	 cursor:pointer;
-	 padding:0 0 30px 0; 
-	 margin:0 0 -2px 0;
-	 text-align:center;
+	 padding:0 0 20px 0; 
+	 margin:0 0 -1px 0;
+	 text-align:left;
 	 opacity:.4;
 	 -webkit-transition: all 1s;
 	-moz-transition: all 1s;
@@ -1596,7 +1600,7 @@ svg.svg-features-top {
 }
 .hiw-titles__slide span{
 	display:block;
-	position:center;
+	position:left;
 }
 .hiw-titles__slide.swiper-slide-active{
 	position:relative;	
@@ -1633,7 +1637,7 @@ svg.svg-features-top {
 	width:100%;
 	background-color:#d0ccd2;
 	padding:20px 0;
-	text-align:right;
+	text-align:left;
 }
 
 /*===============================================*/
@@ -2548,7 +2552,7 @@ line-height:22px;
 /*  HEADER 	 */
 /*---------------*/
 .header{
-height:50px;
+height:5px;
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -2989,7 +2993,7 @@ svg.svg-cta-bottom {
 .intro__title{
 	padding:5% 0 10px 0;
 	font-size:30px;
-	line-height:34px;
+	line-height:40px;
 }
 .intro__subtitle{
 	font-size:14px;
