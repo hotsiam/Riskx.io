@@ -1582,56 +1582,56 @@ body {
 }
 
 .social1 a.icon1 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons1.png");
     width: 25px;
     height: 23px;
     background-position: -29px -127px;
 }
 
 .social1 a.icon2 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons2.png");
     width: 28px;
     height: 29px;
     background-position: 0px -68px;
 }
 
 .social1 a.icon3 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons3.png");
     width: 25px;
     height: 25px;
     background-position: -32px -68px;
 }
 
 .social1 a.icon4 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons4.png");
     width: 31px;
     height: 30px;
     background-position: 0px 0px;
 }
 
 .social1 a.icon5 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons5.png");
     width: 27px;
     height: 22px;
     background-position: 0px -101px;
 }
 
 .social1 a.icon6 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons6.png");
     width: 27px;
     height: 22px;
     background-position: -104px 0px;
 }
 
 .social1 a.icon7 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons7.png");
     width: 20px;
     height: 29px;
     background-position: -135px 0px;
 }
 
 .social1 a.icon8 {
-    background-image: url("/img/icons.png");
+    background-image: url("/static/icons8.png");
     width: 30px;
     height: 30px;
     background-position: -70px 0px;

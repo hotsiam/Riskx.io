@@ -130,7 +130,7 @@ h6{
 /* BLOCK - header */
 .header{
 	width:100%;
-	height:24px;
+	height:16px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
@@ -690,7 +690,7 @@ h6{
 	list-style:none;
 	padding:5px 0;
 	margin:0px;
-	line-height:22px;
+	line-height:15px;
 }
 
  /* ELEMENT grid__image  */
@@ -1569,26 +1569,30 @@ svg.svg-features-top {
 /*  7.7 CUSTOM SECTION - HOW IT WORKS (HIW) 			 */
 /*===============================================*/
 .section--hiw{
-	position:left;
+	position:center;
 	background-color: #f7f8f9;
 }
 .hiw{
 	margin-left: auto;
     margin-right: auto;
+    position:relative;
 	width:40%;
 	overflow:hidden;
-	text-align:left;
+	text-align:center;
 	height:400px;
+	left:20px;
 }
 .hiw-titles{
+	position:relative;
 	border-bottom:1px #ddd solid;
-	margin:0 0 40px 0;
-	width:600px;
-	text-align:left;
-	left:150px;
+	left:50px;
+	margin:0 0 1px 0;
+	width:400px;
+	text-align:center;
+	right:100px;
 }
 .hiw-titles__slide{
-	 width: calc(100% / 5);
+	 width: calc(100% / 3);
 	 cursor:pointer;
 	 padding:0 0 20px 0; 
 	 margin:0 0 -1px 0;
@@ -1600,7 +1604,7 @@ svg.svg-features-top {
 }
 .hiw-titles__slide span{
 	display:block;
-	position:left;
+	position:center;
 }
 .hiw-titles__slide.swiper-slide-active{
 	position:relative;	
@@ -1608,7 +1612,7 @@ svg.svg-features-top {
 }
 .hiw-titles__slide.swiper-slide-active::after {
     content: '';
-    position:absolute;
+    position:relative;
     left: 0;
     right: 0;
     bottom: 0;
@@ -1618,10 +1622,10 @@ svg.svg-features-top {
     background: #967eff;
 }
 .hiw-content__slide{
-	background-color: #fff;
+	background-color: #f7f8f9;
 	text-align:left;
 	padding:40px 0;
-	height:300px;
+	height:600px;
 }
 .hiw-content__slide pre{
 	text-align:center;
@@ -1637,7 +1641,7 @@ svg.svg-features-top {
 	width:100%;
 	background-color:#d0ccd2;
 	padding:20px 0;
-	text-align:left;
+	text-align:center;
 }
 
 /*===============================================*/
@@ -2452,7 +2456,7 @@ ul.grid__list--sicons li a{
 }
 ul.grid__list--sicons li a img{
 	display:block;
-	width:20px;
+	width:30px;
 }
 ul.grid__list--sicons li a:hover{
 	opacity:.5;
