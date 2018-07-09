@@ -1576,26 +1576,27 @@ svg.svg-features-top {
 	margin-left: auto;
     margin-right: auto;
     position:relative;
-	width:40%;
+	width:80%;
 	overflow:hidden;
 	text-align:center;
-	height:400px;
-	left:20px;
+	height:450px;
+	left:16px;
 }
 .hiw-titles{
 	position:relative;
 	border-bottom:1px #ddd solid;
-	left:50px;
+	left:-300px;
 	margin:0 0 1px 0;
-	width:400px;
+	width:900px;
 	text-align:center;
 	right:100px;
+	top:20px;
 }
 .hiw-titles__slide{
-	 width: calc(100% / 3);
+	 width: calc(100% / 4.8);
 	 cursor:pointer;
 	 padding:0 0 20px 0; 
-	 margin:0 0 -1px 0;
+	 margin:0 0 1px 0;
 	 text-align:left;
 	 opacity:.4;
 	 -webkit-transition: all 1s;
@@ -1617,14 +1618,14 @@ svg.svg-features-top {
     right: 0;
     bottom: 0;
     margin: auto;
-    width: 60%;
+    width: 70%;
     height: 4px;
     background: #967eff;
 }
 .hiw-content__slide{
 	background-color: #f7f8f9;
 	text-align:left;
-	padding:40px 0;
+	padding:50px 0;
 	height:600px;
 }
 .hiw-content__slide pre{
@@ -2689,7 +2690,7 @@ transition: none;visibility:visible;top:auto;}
  top: 0;
  display: block;
  height: 38px;
- width: 50px;
+ width: 90px;
  cursor: pointer;
 border-left: 1px solid #ebeced;
 background-color:#fff;
@@ -2826,7 +2827,7 @@ ul.grid__list--fmenu li {
 	bottom:0;
 	left:5%;
 	z-index:222;
-	top:600px;
+	top:1000px;
 }
 .intro-animation img{
   max-width:100%;
