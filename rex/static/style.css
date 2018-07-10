@@ -448,7 +448,7 @@ h6{
 	clear:both;
 }
 .grid__item--padding{
-	 background-color:#f7f8f9;
+	 background-color:#f3e6f8;
 }
 .grid__item--centering{
 	text-align:center;
@@ -651,13 +651,13 @@ h6{
  /* ELEMENT  grid__title  */
 /* --------------------  */
 .grid__title{
-	font-size:20px;
+	font-size:15px;
 	font-weight:400;
 	padding:0 0 20px 0;
 	margin:0px;
 }
 .grid__title span{
-	font-weight:700;
+	font-weight:600;
 }
 
 /* ELEMENT  grid__text  */
@@ -668,7 +668,7 @@ h6{
 }
 .grid__text span{
 	font-weight:700;
-	font-size:24px;
+	font-size:15px;
 }
 
 /* ELEMENT  grid__more  */
