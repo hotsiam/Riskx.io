@@ -651,6 +651,7 @@ h6{
  /* ELEMENT  grid__title  */
 /* --------------------  */
 .grid__title{
+	color:#fff;
 	font-size:15px;
 	font-weight:400;
 	padding:0 0 20px 0;
@@ -667,6 +668,7 @@ h6{
 	line-height:26px;
 }
 .grid__text span{
+	font-color:#fff;
 	font-weight:700;
 	font-size:15px;
 }
@@ -847,9 +849,9 @@ h6{
     top: 20px;
 	padding:0 0 15px 0;
 	font-size:1px;
-	line-height:60px;
+	line-height:50px;
 	letter-spacing:1px;
-	font-weight:650;
+	font-weight:300;
 	float:left;
 }
 .intro__title span{
@@ -860,6 +862,7 @@ h6{
 	float:left;
 	padding:0 10px 0 0;
 	font-size:40px;
+	font-weight:300;
 }
 .intro__title__words-animation{
 	position:relative;
@@ -1505,7 +1508,7 @@ svg.svg-features-top {
 /*  7.6 CUSTOM SECTION - CTA 			 */
 /*===============================================*/
  .section--cta{
-	background-color: #f7f8f9;
+	background-color: #fff;
 	position:relative;
 	padding-bottom:40px;
 }
@@ -1587,17 +1590,17 @@ svg.svg-features-top {
 	border-bottom:1px #ddd solid;
 	left:-300px;
 	margin:0 0 1px 0;
-	width:900px;
+	width:1000px;
 	text-align:center;
 	right:100px;
 	top:20px;
 }
 .hiw-titles__slide{
-	 width: calc(100% / 4.8);
+	 width: calc(100% / 4);
 	 cursor:pointer;
 	 padding:0 0 20px 0; 
 	 margin:0 0 1px 0;
-	 text-align:left;
+	 text-align:center;
 	 opacity:.4;
 	 -webkit-transition: all 1s;
 	-moz-transition: all 1s;
@@ -2395,7 +2398,7 @@ transition: all 0.3s 0.12s;
 	height:auto;
 	float:left;
 	clear:both;
-	background-color: #f2e6f8;
+	background-color: #ffffff;
 	position:relative;
 	-webkit-background-size: 100%; 
 	-moz-background-size: 100%;
@@ -2474,7 +2477,7 @@ ul.grid__list--fmenu li a::after {
     display: block;
     width: 0;
     height: 1px;
-    background: #967eff;
+    background: #ffffff;
     transition: width .3s;
 }
 
@@ -2482,7 +2485,7 @@ ul.grid__list--fmenu li a:hover::after {
     width: 100%;
 }
 ul.grid__list--fmenu li a:hover {
-	color: #967eff;
+	color: #ffffff;
 }
 /*===============================================*/
 /* 9. MEDIA QUERIES   			 */
