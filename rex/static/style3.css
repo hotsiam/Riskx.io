@@ -2377,7 +2377,7 @@ transition: all 0.3s 0.12s;
 	font-weight:700;
 }
 .grid__text--copyright{
-	color:#fff;
+	font-color:#fff;
 	line-height:22px;
 }
 ul.grid__list--sicons{

@@ -683,11 +683,13 @@ h6{
 /* ELEMENT grid__list  */
 /* --------------------  */
 .grid__list{
+	color:#be63ff;
 	list-style:none;
 	padding:0px;
 	margin:0px;
 }
 .grid__list li{
+	font-color:#be63ff;
 	list-style:none;
 	padding:5px 0;
 	margin:0px;
@@ -1085,11 +1087,15 @@ svg.svg-features-top {
 	font-weight:300;
 }
 .grid__text{
-	color:#626262;
+	color:#9f5dff;
 	font-size:13px;
 	line-height:30px;
 }
-
+.grid__text2{
+	color:#ffffff;
+	font-size:13px;
+	line-height:30px;
+}
 
 /*===============================================*/
 /*  7.4 CUSTOM SECTION - TESTIMONIALS 			 */
@@ -1587,7 +1593,7 @@ svg.svg-features-top {
 .hiw-titles{
 	position:relative;
 	border-bottom:1px #ddd solid;
-	left:-300px;
+	left:-310px;
 	margin:0 0 1px 0;
 	width:1000px;
 	text-align:center;
@@ -1595,11 +1601,11 @@ svg.svg-features-top {
 	top:20px;
 }
 .hiw-titles__slide{
-	 width: calc(100% / 4);
+	 width: calc(100% / 5);
 	 cursor:pointer;
 	 padding:0 0 20px 0; 
 	 margin:0 0 1px 0;
-	 text-align:center;
+	 text-align:left;
 	 opacity:.4;
 	 -webkit-transition: all 1s;
 	-moz-transition: all 1s;
@@ -2467,7 +2473,7 @@ ul.grid__list--sicons li a:hover{
 
 ul.grid__list--fmenu li a {
     display: inline-block;
-    color:#000;
+    color:#fff;
     text-decoration: none;
 }
 
