@@ -651,7 +651,7 @@ h6{
  /* ELEMENT  grid__title  */
 /* --------------------  */
 .grid__title{
-	color:#fff;
+	color:#a568ff;
 	font-size:15px;
 	font-weight:400;
 	padding:0 0 20px 0;
@@ -668,7 +668,6 @@ h6{
 	line-height:26px;
 }
 .grid__text span{
-	font-color:#fff;
 	font-weight:700;
 	font-size:15px;
 }
