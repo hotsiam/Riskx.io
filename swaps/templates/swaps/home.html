@@ -10,6 +10,9 @@
 <meta name="author" content="SmartTemplates" />
 <meta name="description" content="landing page template for saas companies" />
 <meta name="keywords" content="landing page template, saas landing page template, saas website template, one page saas template" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
 
 <title>Riskx.io | Distributing Risk</title>
 <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
@@ -17,6 +20,30 @@
 <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <link rel="stylesheet" href="{% static 'style2.css' %}"/>
+<link rel="stylesheet" href="{% static 'style4.css' %}"/>
+<!-- <link rel="stylesheet" href="{% static 'style5.css' %}"/> -->
+<!--  -->
+	
+	<!-- Font -->
+	
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
+
+<!-- Stylesheets -->
+
+<link href="{% static 'bootstrap.css' %}" rel="stylesheet">
+
+
+<link href="{% static 'common-css/ionicons.css'%}" rel="stylesheet">
+
+
+<link rel="stylesheet" href="{% static 'jquery.classycountdown.css' %}" />
+	
+<link href="{% static 'styles.css' %}" rel="stylesheet">
+
+<link href="{% static 'responsive.css' %}" rel="stylesheet">
+
+<!--  -->
+
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
 
 <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
@@ -26,7 +53,7 @@
 	<header class="header">
 		<div class="header__content header__content--fluid-width">
 			<div class="header__logo-title">RISKX.IO</div>
-		<!-- 	<div class="header__logo-title2"><img src="{% static 'images/logo-blank.png' %}"/></div> -->
+<!-- 			<div class="header__logo-title2"><img src="{% static 'images/logo-blank.png' %}"/></div> -->
 			<nav class="header__menu">                                                                   
 				<ul>
 					<li><a class="selected header-link" href="#intro">HOME</a></li>
@@ -66,7 +93,7 @@
 					<div class="intro__subtitle">Join us an and customise derivative smart contracts that you can deploy on the Riskx.io blockchain, using a simple and intuitive user interface. Is the interest on your credit card too high? Or maybe you're a large multinational wanting to reduce exposure to LIBOR? Use the Riskx.io platform to hedge against a range of risk exposures.</div>
 					<div class="intro__buttons intro__buttons--left">
 						<a href="{% static 'home.html' %}" class="btn btn--blue-bg btn--play modal-toggle" data-openpopup="animation">Watch Demo</a>
-						<a href="{% static 'home.html' %}" class="btn btn--red-bg">Read Whitepaper</a>
+						<a href="https://www.scribd.com/document/384401331/RISKX-Whitepaper" target="_blank" class="btn btn--red-bg">Read Whitepaper</a>
 					</div>
 				    </div>	
 				</div>
@@ -129,9 +156,10 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			<svg class="svg-features-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-				<path d="M55,0 L68,35 Q72,45 80,40 L100,30 100,0 Z" fill="#2b016d"/>
+				<svg class="svg-features-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<path position="fixed" d="M55,0 L68,35 Q72,45 80,40 L100,30 100,0 Z" fill="#2b016d"/>
 			</svg>
+
 
 			
 	</section>
@@ -180,7 +208,7 @@
 <strong><div class="grid__icon">Zane Mcmurtrie: 
 Founder & Developer
 
-<img src="{% static 'images/icons/icons-64-violet/zane.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/zane-mcmurtrie-a8428776/" class="link-in"></a><a href="https://www.linkedin.com/in/zane-mcmurtrie-a8428776/"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+<img src="{% static 'images/icons/icons-64-violet/zane.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/zane-mcmurtrie-a8428776/" target="_blank" class="link-in"></a><a href="https://www.linkedin.com/in/zane-mcmurtrie-a8428776/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
 											</pre>										
 									 </div>
@@ -189,7 +217,7 @@ Founder & Developer
 <strong><div class="grid__icon">Steve Massey: 
 Chief Marketing Officer
 
-<img src="{% static 'images/icons/icons-64-violet/steve.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/steve-massey-23a9517b/" class="link-in"></a><a href="hhttps://www.linkedin.com/in/steve-massey-23a9517b/"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+<img src="{% static 'images/icons/icons-64-violet/steve.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/steve-massey-23a9517b/" class="link-in"></a><a href="hhttps://www.linkedin.com/in/steve-massey-23a9517b/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
 											</pre>		
 									</div>				
@@ -198,7 +226,7 @@ Chief Marketing Officer
 <strong><div class="grid__icon">Jason McCubbin:
 Compliance Officer and Legal Services
 
-<img src="{% static 'images/icons/icons-64-violet/jason.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/jason-mccubbin-76204458/" class="link-in"></a><a href="https://www.linkedin.com/in/jason-mccubbin-76204458/"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+<img src="{% static 'images/icons/icons-64-violet/jason.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/jason-mccubbin-76204458/" class="link-in"></a><a href="https://www.linkedin.com/in/jason-mccubbin-76204458/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
 
 
@@ -209,7 +237,7 @@ Compliance Officer and Legal Services
 <strong><div class="grid__icon">Gopi Sundar:
 Technical Lead
 
-<img src="{% static 'images/icons/icons-64-violet/gopi.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/gopi-s-3786416/" class="link-in"></a><a href="https://www.linkedin.com/in/gopi-s-3786416/"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+<img src="{% static 'images/icons/icons-64-violet/gopi.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/gopi-s-3786416/" class="link-in"></a><a href="https://www.linkedin.com/in/gopi-s-3786416/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
 	
 											</pre>				
@@ -219,7 +247,7 @@ Technical Lead
 <strong><div class="grid__icon">Rachel Jones: 
 Product Advisor
 
-<img src="{% static 'images/icons/icons-64-violet/rachel.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/" class="link-in"></a><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+<img src="{% static 'images/icons/icons-64-violet/rachel.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/" class="link-in"></a><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
 											</pre>								
 									</div>
@@ -237,7 +265,7 @@ Product Advisor
 	<section class="section section--roadmap" id="roadmap">
 
 			<div class="section__content section__content--fluid-width section__content--roadmap">
-			        <h2 class="section__title section__title--centered section__title--features">Riskx.io Roadmap</h2>
+			        <h2 class="section__title section__title--centered section__title--features"></h2>
 
 		<div class="section__description section__description--centered section__description--roadmap">
 	        <div class="list-years1">
@@ -393,70 +421,72 @@ Product Advisor
 
 	<!-- Section -- testimonials -->
 	<section class="section section--testimonials" id="testimonials">
+		<h1>Presale Countdown: 5 Sept 2018</h1>
+	<!-- 	<div id="clockdiv">
+		  <div>
+		    <span class="days"></span>
+		    <div class="smalltext">Days</div>
+		  </div>
+		  <div>
+		    <span class="hours"></span>
+		    <div class="smalltext">Hours</div>
+		  </div>
+		  <div>
+		    <span class="minutes"></span>
+		    <div class="smalltext">Minutes</div>
+		  </div>
+		  <div>
+		    <span class="seconds"></span>
+		    <div class="smalltext">Seconds</div>
+		  </div>
+		</div> -->
+<!-- <section class="right-section" style="background-image: url(images/countdown-1-1000x1000.jpg)"> -->
+				<div class="display-table center-text">
+					<div class="display-table-cell">
+						<div id="rounded-countdown">
+							<div class="countdown" data-remaining-sec="3999600"></div>
+						</div>	
+					</div><!-- display-table-cell -->
+				</div><!-- display-table -->
+			</section><!-- right-section -->
+
+
+	<!-- Section -->
+<!-- 	<section class="section section--icons" id="icons">
+		<div class="">	
+						<div class="#">
+						
+							<div class="#">
+								<div class="#"><img src="{% static 'images/tree_topology.png' %}" alt="" title=""/></div>
+								<p class="grid__text">Our 24/7 support team is here to help you and make sure our product is up to date and optmised for your use.</p>
+							</div>
+						</div>
+<div class="grid grid--7col grid--features grid--noborder"> -->
+	<section class="section section--features" id="features">
 
 			<div class="section__content section__content--fluid-width section__content--padding">
-			        <h2 class="section__title section__title--centered">Decentralised Risk Management Ecosystem</h2>
-					  <div class="testimonials">
-	
-								<div class="testimonials__item">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-1.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Lason Duvan <a href="#">New York Business Center</a></div>
-										<div class="testimonials__text"><p>"Business is all about the customer: what the customer wants and what they get. "</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-2.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Jada Sacks <a href="#">Paris Tehnics</a></div>
-										<div class="testimonials__text"><p>" I've internalized it to the point of understanding that the success of my actions and/or endeavors"</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item testimonials__item--x2">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-3.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Lason Duvan <a href="#">Music Software</a></div>
-										<div class="testimonials__text"><p>"The American Dream is that any man or woman, despite of his or her background, can change their circumstances"</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-4.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Duran Jackson <a href="#">New York Business Center</a></div>
-										<div class="testimonials__text"><p>"Generally, every customer wants a product or service that solves their problem, worth their money"</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item testimonials__item--x3">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-5.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Maria Allesi <a href="#">Italy Solutions</a></div>
-										<div class="testimonials__text"><p>"No one can make you successful; the will to success comes from within.' I've made this my motto."</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-6.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
-										<div class="testimonials__text"><p>"Can change their circumstances and rise as high as they are willing to work"</p></div>
-									</div>
-								</div>
-								
-								<div class="testimonials__item testimonials__item--x4">
-									<div class="testimonials__thumb"><img src="{% static 'images/avatar-7.png' %}" alt="" title=""/></div>
-									<div class="testimonials__content">
-										<div class="testimonials__source">Jenifer Patrison<a href="#">App Dating</a></div>
-										<div class="testimonials__text"><p>"Can change their circumstances and rise as high as they are willing to work"</p></div>
-									</div>
-								</div>
-
+				<div class="grid grid--4col grid--features">
+				
+					<div class="grid__item">
+						<div class="grid__icon"><img src="{% static 'images/tree_topology.png' %}" alt="" title=""/></div>
+						<h3 class="grid__title"><span>Responsive</span> Layout Template</h3>
+						<p class="grid__text">Responsive code that makes your landing page look good on all devices (desktops, tablets, and phones). Created with mobile specialists.</p>
 					</div>
-				<div class="clear"></div>
-			</div>
+					
+					<div class="grid__item">
+						<div class="grid__icon"><img src="{% static 'images/star_topology.png' %}" alt="" title=""/></div>
+						<h3 class="grid__title">SaaS Landing Page <span>Analysis</span></h3>
+						<p class="grid__text">A perfect structure created after we analized trends in SaaS landing page designs. Analysis made to the most popular SaaS businesses.</p>
+					</div>
+					
+					<div class="grid__item">
+						<div class="grid__icon"><img src="{% static 'images/douxiaxieyi.png' %}" alt="" title=""/></div>
+						<h3 class="grid__title">Smart <span>BEM</span> Grid</h3>
+						<p class="grid__text">Blocks, Elements and Modifiers. A smart HTML/CSS structure that can easely be reused. Layout driven by the purpose of modularity.</p>
+					</div>
+	
+
+				</div>
 	</section>
 	<!-- Section -->
 	<section class="section" id="faq">
@@ -469,8 +499,8 @@ Product Advisor
 						<p class="grid__text">Have a pre-ICO question about our products and features? Or maybe you're after additional information. </p>
 						<ul class="grid__list">
 							<li>Simple and Smart Risk Management</li> 
-							<li>Works reintegrated in any part of the layout</li> 
-							<li>Reuse the elements from one design to another</li> 
+							<li>Interoperable with other financial blockchains</li> 
+							<li>Take your success in and out of the RISKX blockchain</li> 
 						</ul>
 						
 					</div>
@@ -792,7 +822,7 @@ Product Advisor
 					<div class="modal__header">How it works animation</div>
 					
 					<div class="modal__image">
-						<img src="{% static 'images/intro-animation.gif' %}" alt="" title=""/>
+						<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/WUiutW2FL38" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 					</div>
 				</div>
 			</div>
@@ -803,5 +833,19 @@ Product Advisor
 <script src="{% static 'js/swiper.custom.js' %}"></script>
 <script src="{% static 'js/animation.js' %}"></script>
 <script src="{% static 'js/menu.js' %}"></script>
+<script src="{% static 'js/countdown.js' %}"></script>
+<script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
+
+<script src="{% static 'js/tether.min.js' %}"></script>
+
+<script src="{% static 'js/bootstrap.js' %}"></script>
+
+<script src="{% static 'js/jquery.classycountdown.js' %}"></script>
+
+<script src="{% static 'js/jquery.knob.js' %}"></script>
+
+<script src="{% static 'js/jquery.throttle.js' %}"></script>
+
+<script src="{% static 'js/scripts.js' %}"></script>
 </body>
 </html>

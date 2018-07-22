@@ -825,7 +825,7 @@ h6{
 /*  7.1 CUSTOM SECTION - INTRO	 			 */
 /*===============================================*/
 .section--intro{
-	width:100%;
+	min-width:100%;
 	height:100%;
 	-webkit-background-size: 100%; 
 	-moz-background-size: 100%;
@@ -944,11 +944,13 @@ h6{
 	 text-align:left;
 }
 svg.svg-intro-bottom {
+  display: inline-block;
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
   z-index:111;
+  overflow: hidden;
 }
 .intro-animation{
   width:50%;
@@ -1053,7 +1055,7 @@ svg.svg-features-top {
 	position: absolute;
 	top:0;
 	right:0px;
-	width: 100%;
+	min-width: 100%;
 	height: 100%;
 	z-index:111;
 }
@@ -1394,8 +1396,77 @@ svg.svg-features-top {
 /*===============================================*/
 /*  7.4 CUSTOM SECTION - TESTIMONIALS 			 */
 /*===============================================*/
+
+.container {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+#main { 
+  background: #3B3B3B;
+  height: 430px;
+}
+
+.content {
+  padding: 10px 44px;
+}
+
+.text {
+  border-bottom: 1px solid #262626;
+  margin-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.text h2 {
+  color: #E5E5E5;
+  font-size: 30px;
+  font-style: roboto;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.counter {
+  background: #2C2C2C;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
+  min-height: 150px;
+  text-align: center;
+}
+
+.counter h3 {
+  color: #E5E5E5;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+#countdown {
+  color: #FFFFFF;
+}
+
+#countdown span {
+  color: #E5E5E5;
+  font-size: 26px;
+  font-weight: normal;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+} 
+
+
+
+
+
+
  .section--testimonials{
-	background-color:#f7f8f9;
+	background-color:#ffffff;
 	-webkit-background-size:  auto 90%;
 	-moz-background-size:  auto 90%;
 	-o-background-size:  auto 90%;
@@ -3320,4 +3391,4 @@ svg.svg-cta-bottom {
 .btn--play{
 	padding-right:50px; 
 }
-}
+
