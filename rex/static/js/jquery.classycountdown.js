@@ -25,7 +25,7 @@
                     minutes: 'Minutes',
                     seconds: 'Seconds'
                 },
-                style: 'font-size: 24px;'
+                style: 'font-size: 19px;'
             },
             style: {
                 element: '',

@@ -1128,7 +1128,7 @@ svg.svg-features-top {
 
 @media only screen and (max-width: 760px) {
     .list-years1 {
-        margin-left: 15px;
+        margin-left: 0px;
         padding-bottom: 62px;
     }
 }
