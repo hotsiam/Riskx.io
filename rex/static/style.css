@@ -162,7 +162,7 @@ h6{
 	clear:both;
 }
 .header__logo-title{
-	background-image:url(images/logo-blank.png);
+/*	background-image:url(images/riskx-icon.png);*/
 	font-size:26px;
 	letter-spacing:-1px;
 	position:relative;
@@ -172,14 +172,14 @@ h6{
 	transform: translateY(-50%);
 	z-index:999;
 }
-/*.header__logo-title2{
-	background-image:url(images/logo-blank.png);
+.header__logo-title2{
+	background-image:url(images/riskx-icon.png);
 	position:relative;
 	size:150px;
 	float:left;
-	top: 60%;
-	left:-30px;
-	transform: translateY(-50%);*/
+	top: 45%;
+	left:-170px;
+	transform: translateY(-50%);
 }
 
 .header__logo-title span{
