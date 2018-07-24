@@ -51,7 +51,7 @@ body{
 	padding:0;
 	font-size:16px;
 	margin:0 auto;
-	color:#1d1d1d;
+	color:#000;
 	background-color:#fff;
 	font-weight:300;
 }
@@ -227,7 +227,7 @@ h6{
   z-index:99999;
   display: none;
   cursor:pointer;
-  border-bottom:1px solid #fff;
+  border-bottom:1px solid #ffffff;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 }
@@ -239,8 +239,8 @@ h6{
   width: 28px;
   height: 6px;
   z-index:999;
-  border-top: 1px double #fff;
-  border-bottom: 1px solid #fff;
+  border-top: 1px double #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 .header__menu > ul > li {display:inline-block; padding:0; }
 .header__menu > ul > li > a {
@@ -2915,8 +2915,6 @@ ul.grid__list--fmenu li a:hover {
 }
 
 
-}
-
 /*===============================================*/
 /* Mobile and portrait Tablets max 800 px */
 /*===============================================*/
@@ -2935,7 +2933,7 @@ line-height:22px;
 /*  HEADER 	 */
 /*---------------*/
 .header{
-height:5px;
+height:0.1px;
 -webkit-transition: all 0.5s;
 -moz-transition: all 0.5s;
 -ms-transition: all 0.5s;
@@ -3373,6 +3371,47 @@ svg.svg-cta-bottom {
 /* Small Mobile under 600	  					 */
 /*===============================================*/
 @media screen and (max-width: 600px) {
+
+.header__logo-title{
+	font-size:20px;
+	color:#000;
+}
+.section--intro{
+	min-width:200%;
+	height:100%;
+	-webkit-background-size: 100%; 
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 
+	background-size: cover;
+	background-position:center bottom;
+	background-image:url(images/bg.jpg);
+	position:relative;
+	overflow:hidden;
+}
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding:0;
+	font-size:16px;
+	margin:0 auto;
+	color:#ffffff;
+	background-color:#fff;
+	font-weight:300;
+}
+.intro__subtitle{
+	position: relative;
+    top: 90px;
+	padding:0 0 40px 0;
+	font-size:14px;
+	line-height:34px;
+	letter-spacing:0.4px;
+	clear:both;
+	color:#fff;
+	
+}
 .intro__title{
 	padding:5% 0 10px 0;
 	font-size:30px;
@@ -3397,7 +3436,7 @@ svg.svg-cta-bottom {
 
 body{
 	text-align: center;
-	background: #00ECB9;
+	background: #ffffff;
   font-family: sans-serif;
   font-weight: 100;
 }
