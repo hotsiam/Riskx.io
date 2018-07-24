@@ -3397,7 +3397,7 @@ body{
 	padding:0;
 	font-size:16px;
 	margin:0 auto;
-	color:#ffffff;
+	color:#9a83fc;
 	background-color:#fff;
 	font-weight:300;
 }
@@ -3410,6 +3410,14 @@ body{
 	text-align:left;
 	padding:50px 0;
 	height:600px;
+}
+.faq__content {
+  max-height: 0;
+  overflow: hidden;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+	background-color: #fffffff2;
 }
 .intro__subtitle{
 	position: relative;
