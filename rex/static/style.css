@@ -1,12 +1,4 @@
-/*------------------------------------------------------------------
-[Main Stylesheet] - The true sheet
 
-Author:	SmartTemplates
-Version:	1.0
-Created:	05 June 2018
-Last updated:	05 June 2018
-Template:	LATERAL | Landing page templates for SAAS companies
--------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------- 
 [Table of Contents]
@@ -172,15 +164,17 @@ h6{
 	transform: translateY(-50%);
 	z-index:999;
 }
-.header__logo-title2{
+.header__logo-title2 {
 	background-image:url(images/riskx-icon.png);
 	position:relative;
 	max-width:100%;
-	size:150px;
+	size:130px;
 	float:left;
 	top: 45%;
 	left:-170px;
 	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
 }
 
 .header__logo-title span{
@@ -3372,9 +3366,10 @@ svg.svg-cta-bottom {
 /*===============================================*/
 @media screen and (max-width: 600px) {
 
+
 .header__logo-title{
 	font-size:20px;
-	color:#000;
+	color:#967dfd;
 }
 .section--intro{
 	min-width:200%;
