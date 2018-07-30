@@ -128,6 +128,12 @@ $(document).ready(function () {
 	format: "multitoggle",
 	sticky: true
 	});
-		
+	
+	$('.moveMe').hover(function(){
+    $(this).addClass('moveMe-hover');
+	}, function(){
+    $(this).removeClass('moveMe-hover');
+	})
+	
 });
 

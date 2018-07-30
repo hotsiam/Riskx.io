@@ -176,6 +176,18 @@ h6{
 	background-repeat: no-repeat;
 	overflow:hidden;
 }
+.header__logo-title3 {
+	background-image:url(images/t-icon.png);
+	position:relative;
+	max-width:100%;
+	size:130px;
+	float:left;
+	top: 1050%;
+	left:1000px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
 
 .header__logo-title span{
 	font-weight:700;
@@ -1386,7 +1398,30 @@ svg.svg-features-top {
 }
 
 
-
+.col-sm-6 col-xs-12 wow slideInUp {
+	background-image:url(images/distribution.png);
+	position:relative;
+	max-width:50%;
+	size:130px;
+	float:left;
+	top: 1050%;
+	left:1000px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
+.col-sm-6 col-xs-12 wow slideInUp {
+	background-image:url(images/allocation.png);
+	position:relative;
+	max-width:50%;
+	size:130px;
+	float:left;
+	top: 1050%;
+	left:1000px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
 
 /*===============================================*/
 /*  7.4 CUSTOM SECTION - TESTIMONIALS 			 */
@@ -2907,7 +2942,18 @@ ul.grid__list--fmenu li a:hover {
 	padding-left:4%;
 	padding-right:4%;
 }
-
+.header__logo-title2 {
+	background-image:url(images/riskx-icon.png);
+	position:relative;
+	max-width:100%;
+	size:130px;
+	float:left;
+	top: 45%;
+	left:-170px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
 
 /*===============================================*/
 /* Mobile and portrait Tablets max 800 px */
@@ -2919,6 +2965,7 @@ font-size:14px;
 p{
 line-height:22px;
 }
+
 .header__content--fix-width, .section__content--fix-width, .footer__content--fix-width{
 	width:90%;
 	padding-left:5%;
@@ -2936,6 +2983,18 @@ transition: all 0.5s;
 }
 .header__content{
 height:50px;
+}
+.header__logo-title2 {
+	background-image:url(images/riskx-icon.png);
+	position:relative;
+	max-width:100%;
+	size:130px;
+	float:left;
+	top: 45%;
+	left:-170px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
 }
 /*  MENU 	 */
 /*---------------*/
@@ -3366,7 +3425,18 @@ svg.svg-cta-bottom {
 /*===============================================*/
 @media screen and (max-width: 600px) {
 
-
+.header__logo-title2 {
+	background-image:url(images/riskx-icon.png);
+	position:relative;
+	max-width:100%;
+	size:130px;
+	float:left;
+	top: 45%;
+	left:-170px;
+	transform: translateY(-50%);
+	background-repeat: no-repeat;
+	overflow:hidden;
+}
 .header__logo-title{
 	font-size:20px;
 	color:#967dfd;
@@ -3488,6 +3558,8 @@ h1{
 	padding-top: 5px;
 	font-size: 16px;
 }
+
+/*####### NEW STYLE ########*/
 
 
 

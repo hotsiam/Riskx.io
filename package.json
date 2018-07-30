@@ -1,0 +1,26 @@
+{
+  "name": "riskx.io",
+  "version": "1.0.0",
+  "description": "Riskx ERC20 Token, crowdsale contracts, and cryptocurrency",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "truffle": "^4.1.13"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotsiam/riskx.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hotsiam/riskx.io/issues"
+  },
+  "homepage": "https://github.com/hotsiam/riskx.io#readme"
+}

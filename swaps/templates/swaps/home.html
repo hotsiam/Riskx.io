@@ -17,6 +17,7 @@
 <title>Riskx.io | Distributing Risk</title>
 <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
 
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <link rel="stylesheet" href="{% static 'style2.css' %}"/>
@@ -25,7 +26,7 @@
 <link rel="stylesheet" href="{% static 'style5.css' %}"/>
 <!--  -->
 	
-	<!-- Font -->
+<!-- Font -->
 	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
 
@@ -55,6 +56,18 @@
 		<div class="header__content header__content--fluid-width">
 			<div class="header__logo-title">RISKX.IO</div>
 			<div class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
+
+			<div class="header__logo-title3">
+              <a href="https://t.me/riskx" target="_blank">
+                  <img src="{% static 'images/t-icon.png' %}" class="img-responsive" alt="social icon">
+              </a>
+            </div>
+
+
+
+
+
+<!-- 			<div class="header__logo-title3"><img src="{% static 'images/t-icon.png' %}"/></div> -->
 			<nav class="header__menu">                                                                   
 				<ul>
 					<li><a class="selected header-link" href="#intro">HOME</a></li>
@@ -71,7 +84,7 @@
 					<li><a href="#roadmap" class="header-link">ROADMAP</a></li>
 					<li><a href="#support" class="header-link">CONTACT</a></li>
 					<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin" data-popup="login"><a href="#">LOGIN</a></li>
-					<li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="#">GET STARTED</a></li>			
+					<li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="#">BUY TOKENS</a></li>			
 				</ul>
 			</nav> 
 		</div>		
@@ -106,6 +119,7 @@
 				<path d="M80,0 L50,55 Q45,65 50,82 L55,100 0,100 0,0 Z" fill="#ffffff"/>
 			</svg>
 	</section>
+
 
 	<!-- Section -- features -->
 
@@ -167,6 +181,8 @@
 
 			
 	</section>
+
+
 
 
 	<!-- Section -- How it works -->
@@ -424,7 +440,7 @@ Product Advisor
 
 
 	<!-- Section -- testimonials -->
-	<section class="section section--testimonials" id="testimonials">
+<!-- 	<section class="section section--testimonials" id="testimonials">
 		<h1>Pre-sale Countdown: 27 July 2018</h1>
 
 		<div id="clockdiv">
@@ -444,7 +460,9 @@ Product Advisor
 		    <span class="seconds"></span>
 		    <div class="smalltext">Seconds</div>
 		  </div>
-		</div>
+		</div> -->
+
+
 
 <!-- <section class="right-section" style="background-image: url(images/countdown-1-1000x1000.jpg)"> -->
 <!-- 			<div id="time"></div>
@@ -457,8 +475,74 @@ Product Advisor
 				</div>
 			</section> -->
 
+	<section class="section section--hiw" id="hiw">
+			<div class="section__content section__content--fix-width section__content--padding">
+			        <h2 class="section__title section__title--centered">Total supply: 600 million RIX</h2>
+				<div class="section__description section__description--centered">
+				CITIZENS FROM USA CANNOT PARTICIPATE IN THIS TOKEN DONATION AND IT’S NOT PERMITTED TO BUY TOKEN FOR SOMEONE ELSE. 
+
+				
+				<div class="trt">
+        <div class="container">
 
 
+
+
+<div class="trt">
+        <div class="container" style="width:1000px;">
+			<div class="col-sm-6 col-xs-12 wow slideInUp" style="position: relative; left:-80px;">
+              <a href="#" target="_blank">
+                  <img src="{% static 'images/distribution.png' %}" class="img-responsive" alt="social icon">
+              </a>
+            </div>
+            <div class="col-sm-6 col-xs-12 wow slideInUp" style="position: relative; left:200px;">
+              <a href="#" target="_blank">
+                  <img src="{% static 'images/allocation.png' %}" class="img-responsive" alt="social icon">
+              </a>
+            </div>
+	       
+</section>
+
+<!-- ICO DIV -->
+
+	<section class="bootstrap-iso" style="width: 800px; position: relative; top: 40px; left: 300px">
+		<div class="bootstrap-iso">
+			<div class="bootstrap-iso">
+				<h1 class="text-center">RISKX TOKEN CROWD SALE</h1>
+				<hr/>
+				<br/>
+			</div>
+			<div id="loader">
+				<p class="text-center">Loading...</p>
+			</div>
+			<div id="content" class="text-center">
+				<p>
+					Introducing "RISKX Token" (RIX)!
+					Token price is <span class="token-price"></span> Ether. You currently have <span class="riskx-balance"></span>&nbsp;RISKX.
+				</p>
+				<br/>
+				<form role="form">
+					<div class="form-group">
+						<div class="input-group">
+							<input id="numberOfToken" class="form-control input-lg" type="number" name="number" value="1" min="1" pattern="[0-9]">
+							</input>
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-primary bt-lg">Buy Tokens</button>
+							</span>
+						</div>
+					</div>	
+				</form>
+				<br>
+					<div class="progress">
+					  <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+					</div>
+				</div>
+				<p><span class="tokens-sold"></span> / <span class="tokens-available"></span>Tokens Sold</p>
+				<hr>
+				<p id="accountAddress"></p>
+			</div>
+		</div>
+	</section>
 
 
 	<!-- Section -->
@@ -641,7 +725,6 @@ Product Advisor
 	
 	<footer class="footer" id="footer">
 			<div class="footer__content footer__content--fluid-width footer__content--svg">
-			
 				<div class="grid grid--5col">
 				
 					<div class="grid__item grid__item--x2">
@@ -899,5 +982,9 @@ Product Advisor
 <script src="{% static 'js/jquery.knob.js' %}"></script>
 <script src="{% static 'js/jquery.throttle.js' %}"></script>
 <script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/web3.min.js' %}"></script>
+<script src="{% static 'js/truffle-contract.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>
