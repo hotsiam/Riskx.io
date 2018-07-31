@@ -23,6 +23,9 @@ from django.http import HttpResponse
 from io import BytesIO
 from django.http import HttpResponse
 from django.template.loader import get_template
+from django.contrib import admin
+from django.urls import path, include
+from swaps import views
 
 
 urlpatterns = [
