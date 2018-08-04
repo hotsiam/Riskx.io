@@ -24,6 +24,7 @@
 <link rel="stylesheet" href="{% static 'style4.css' %}"/>
 <link rel="stylesheet" href="{% static 'responsive.css' %}"/>
 <link rel="stylesheet" href="{% static 'style5.css' %}"/>
+<link rel="stylesheet" href="{% static 'bootstrap-combined.min.css' %}"/>
 <!--  -->
 	
 <!-- Font -->
@@ -274,9 +275,6 @@ Product Advisor
 									</div>
 								</div>
 							</div>
-							
-						
-			
 					</div>
 			</div>
 	</section>
@@ -444,21 +442,17 @@ Product Advisor
 			        <h2 class="section__title section__title--centered">Total supply: 600 million RIX</h2>
 				<div class="section__description section__description--centered">
 				CITIZENS FROM USA CANNOT PARTICIPATE IN THIS TOKEN DONATION AND IT’S NOT PERMITTED TO BUY TOKEN FOR SOMEONE ELSE. 
-
-
-
-
 <div class="trt">
         <div class="container" style="position: relative; top: 50px; width: auto;">
             <div class="col-sm-6 col-xs-12 wow slideInUp" style="position: relative; top:0px; left:0px; height: auto; size: auto; padding-top: 25px; padding-bottom: 50px;">
               <a href="#" target="_blank">
-                  <img src="{% static 'images/allocation.png' %}" class="img-responsive" alt="social icon" style=" position: relative; height: auto; width: 100%;">
+                  <img src="{% static 'images/allocation.png' %}" class="img-responsive" alt="social icon" style=" position: relative; height: auto; max-width: 75%;">
               </a>
             </div>
  <div class="container" style="width: auto; position: relative; top: -150px; left: 0px">
       <div class="row">
         <div class="col-lg-12" style="padding-top: 100px; top: -150px">
-            <h1 class="text-center" style="padding-top: 50px; top: -50px">DAPP TOKEN ICO SALE</h1>
+            <h1 class="text-center" style="padding-top: 50px; line-height: 50px; top: -50px">RISKX TOKEN ICO SALE</h1>
 				<hr/>
 				<br/>
 			</div>
@@ -471,11 +465,16 @@ Product Advisor
 					Token price is <span class="token-price"></span> Ether. You currently have <span class="riskx-balance"></span>&nbsp;RISKX.
 				</p>
 				<br/>
+<div class="landing-progress">
+	<div class="landing-progress-bonus">Pre-Sale bonus 40%</div><span>Total Raised</span>
+	<div class="progress mt-2" style="top: 10px;"><div class="progress-bar" style="width: 20%;"></div>
+	<div class="progress-bar last-child bg-success" style="width: 3%;"></div><div class="progress-value"></div></div>
+	<div class="landing-progress-info"><div class="row"><div class="col-3 align-self-center"><div class="cell"><div class="value"></div></div></div><div class="col-5"><div class="cell"><div class="value">$6.5m</div><div class="label text-primary" style="top: -7px;">Soft Cap</div></div></div><div class="col-4 text-right"><div class="cell"><div class="value">$16.8</div><div class="label" style="top:-8px;">Max Raise</div></div></div></div></div>
 				<form role="form">
 					<div class="form-group">
 						<div class="input-group">
 
-							<input id="numberOfToken" class="form-control input-lg" type="number" name="number" value="4000" min="4000" pattern="[0-9]" style="height: 25px; width: auto; position: relative; top: -5px; right: 10px;     border-radius: 15px; background: #fff; padding: 20px; width: 200px; height: 5px;">
+							<input id="numberOfToken" class="form-control input-lg" type="number" name="number" value="4000" min="4000" pattern="[0-9]" style="height: 4px; width: auto; position: relative; top: -5px; right: 10px;     border-radius: 15px; background: #fff; padding: 20px; max-width: 200px;">
 							</input>
 							<span class="input-group-btn" style="padding-top: 24px;">
 								<button type="submit" class="btn btn-primary bt-lg" style="background: #b77dff; height: 50px;">Buy Tokens</button>
@@ -485,17 +484,9 @@ Product Advisor
 				<p><span class="tokens-sold"></span> / <span class="tokens-available"></span>Tokens Sold</p>
 				<hr>
 				<p id="accountAddress"></p>
-				<script>
-<div class="list-inline list-inline-lg"><div class="list-inline-item"><a class="btn btn-block btn-success" href="/whitelist">Join Whitelist</a></div><div class="list-inline-item"><a class="btn btn-block btn-outline-secondary" target="_blank" rel="noopener noreferrer" href="https://t.me/dreamtoken"><span class="icon icon-fw icon-telegram"></span><span>Join Telegram</span></a></div></div></div></div><div class="col-lg-6 text-center text-lg-right"><div class="landing-progress"><div class="landing-progress-bonus">Pre-Sale bonus 40%</div><span>Total Raised</span><div class="progress mt-2"><div class="progress-bar" style="width: 20%;">private</div><div class="progress-bar last-child bg-success" style="width: 3%;"></div><div class="progress-value">15%</div></div><div class="landing-progress-info"><div class="row"><div class="col-3 align-self-center"><div class="cell"><div class="value">Start</div></div></div><div class="col-5"><div class="cell"><div class="value">$6.5m</div><div class="label text-primary">Soft Cap</div></div></div><div class="col-4 text-right"><div class="cell"><div class="value">$16.8</div><div class="label">Max Raise</div></div></div></div></div><div class="row"><div class="col-6"><div class="landing-progress-currency">1 DREAM = $0.05</div></div><div class="col-6"><a class="landing-progress-btn btn btn-sm btn-success" href="/token_sale">Buy Tokens Now</a></div></div></div></div></div>
-
-
-
-
-
-					</script>
-				</div>
-			</div>      
-	</section>
+			</div>
+		</div>      
+</section>
 	<section class="section section--features" id="features">
 
 			<div class="section__content section__content--fluid-width section__content--padding">
@@ -733,20 +724,12 @@ Product Advisor
 						<ul class="grid__list grid__list--fmenu">
 								<li><a href="#">Contact</a></li>
 								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Press</a></li>
-								
+								<li><a href="#">Press</a></li>	
 						</ul>
-					</div>
-					
-				</div>
-				
-				
+					</div>	
+				</div>	
 			</div>
-
-
 	</footer>
-	
-
 	  <section class="modal modal--signuplogin">
 		<div class="modal__overlay modal__overlay--toggle"></div>
 		<div class="modal__wrapper modal-transition">
@@ -794,64 +777,6 @@ Product Advisor
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
-
-
-
-
-		<!-- <div class="modal__body">
-		        
-			<div class="modal__content modal__content--login">
-				<div class="modal__info">
-					<h2 class="modal__title">First time here?</h2>
-					<div class="modal__descr">Sign up for <span> KYC &</span> AML</div>
-					<ul class="modal__list">
-					<li>Whitelist for token sale</li>
-					<li>premium access to all products</li>
-					<li>unlimited user accounts</li>
-					</ul>
-					<button class="modal__switch modal__switch--signup" data-popup="signup">Signup</button>
-				</div>
-				<div class="modal__form form">
-					<h2 class="form__title">Login</h2>
-						<form class="form__container" id="LoginForm" method="post" action="home.html">
-						<span class="form__input input input--effect">
-							<input name="name" class="input__field input__field--effect" type="text" id="input-name" />
-							<label class="input__label input__label--effect input__label--effect-color-1" for="input-name">
-								<span class="input__label-content input__label-content--effect">Name</span>
-							</label>
-						</span>
-						<span class="form__input input input--effect">
-							<input name="emails" class="input__field input__field--effect" type="text" id="input-emails" />
-							<label class="input__label input__label--effect input__label--effect-color-1" for="input-emails">
-								<span class="input__label-content input__label-content--effect">Email</span>
-							</label>
-						</span>
-						<div class="modal__checkbox"><input id="remember" name="remember" value="remember" checked type="checkbox"><label for="remember">Keep me Signed in</label></div>
-						<div class="modal__switch modal__switch--forgot" data-popup="forgot">Forgot Password?</div>
-						<input type="submit" name="submit" class="form__submit btn btn--red-bg" id="submitl" value="LOGIN" />
-						</form>
-				</div>
-			</div> -->  <!-- End Modal login
-			
-			<div class="modal__content modal__content--forgot">
-				<div class="modal__form form">
-					<h2 class="form__title">Forgot Password</h2>
-						<form class="form__container" id="ForgotForm" method="post" action="home.html">
-						<span class="form__input input input--effect">
-							<input name="emailf" class="input__field input__field--effect" type="text" id="input-emailf" />
-							<label class="input__label input__label--effect input__label--effect-color-1" for="input-emailf">
-								<span class="input__label-content input__label-content--effect">Email</span>
-							</label>
-						</span>
-						<input type="submit" name="submit" class="form__submit btn btn--blue-bg" id="submitf" value="RESET PASSWORD" />
-						</form>
-				</div>
-				<div class="modal__info">
-					<h2 class="modal__title">We got you covered</h2>
-					<div class="modal__descr">A new password will be sent by email. Remembered your password?</div>
-					<button class="modal__switch modal__switch--signup" data-popup="login">Login</button>
-				</div>
-			</div> -->  
 			
 			<div class="content-footer1__item">
                     <div class="chose-language1">
