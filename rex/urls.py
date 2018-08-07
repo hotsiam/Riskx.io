@@ -18,8 +18,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 import swaps.views 
+import accounts.views
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
 from io import BytesIO
 from django.http import HttpResponse
 from django.template.loader import get_template

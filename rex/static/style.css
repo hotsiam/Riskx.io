@@ -380,6 +380,7 @@ h6{
 .header__menu ul ul li:last-child a {
  border-bottom:none; 
  }
+ 
 /*===============================================*/
 /* 4. SECTION 	 						 */
 /*===============================================*/
@@ -873,7 +874,7 @@ h6{
 	float:left;
 }
 .intro__title span{
-	color:#967eff;
+	color:#54c7fb;
 }
 .intro__title strong{
 	display:block;

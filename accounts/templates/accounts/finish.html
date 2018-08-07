@@ -35,8 +35,8 @@
 <body>
 	<header class="header">
 		<div class="header__content header__content--fluid-width">
-			<div class="header__logo-title" style="color:#000">RISKX.IO</div>
-			<div class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
+			<div href="{% url 'home' %}" class="header__logo-title" style="color:#000">RISKX.IO</div>
+			<div href="{% url 'home' %}" class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
 			  <a href="https://riskx.io">
 
 			<div class="header__logo-title3">
@@ -86,13 +86,13 @@
 <br />
 <br />
 <h3 style="text-align: left; width: 800px; color: #000; letter-spacing: 0.0625em; font-family: 'Source Sans Pro', sans-serif;">
-<strong style="color: #b77dff;">
-Login</strong></h3>	
+
+1. Sign Up | 2. KYC | 3. Terms <strong style="color: #b77dff;">| 4. Finish</strong></h3>	
 <br />
 <br />
 	
 
-<form method="POST" action="{% url 'login' %}">
+<form method="POST" action="{% url 'signup' %}">
 {% csrf_token %}
 Email:
 
@@ -106,16 +106,23 @@ Password:
 
 <br />
 <br />
-	<input type="password" class="form-control input-lg" name="password" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
+	<input type="password" class="form-control input-lg" name="password1" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
 <br />
 <br />
 
+Confirm Password:
+
 <br />
-<input class='btn btn--red-bg' type="submit" value="Login!" />
-</form>
+<br />
+	<input type="password" class="form-control input-lg" name="password2" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
+
 <br />
 <br />
-<li><a href="{% url 'signup' %}">Don't have an account yet?</a></li>
+<br />
+<input class='btn btn--red-bg' type="submit" value="Sign Up!" />
+<br />
+<br />
+<li><a href="{% url 'login' %}">Already have an account?</a></li>
 </form>
 					</div>
 				    </div>	
