@@ -24,7 +24,6 @@ from io import BytesIO
 from django.http import HttpResponse
 from django.template.loader import get_template
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', swaps.views.home, name='home'),

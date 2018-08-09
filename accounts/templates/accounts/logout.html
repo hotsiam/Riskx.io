@@ -35,8 +35,8 @@
 <body>
 	<header class="header">
 		<div class="header__content header__content--fluid-width">
-			<div href="{% url 'home' %}" class="header__logo-title" style="color:#000">RISKX.IO</div>
-			<div href="{% url 'home' %}" class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
+			<div class="header__logo-title" style="color:#000">RISKX.IO</div>
+			<div class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
 			  <a href="https://riskx.io">
 
 			<div class="header__logo-title3">
@@ -59,7 +59,7 @@
 					<li><a href="#roadmap" class="header-link">ROADMAP</a></li>
 					<li><a href="#support" class="header-link">CONTACT</a></li>
 					<li class="header__btn header__btn--login modal-toggle" data-openpopup="signuplogin" data-popup="login"><a href="#">LOGIN</a></li>
-					<li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="#">BUY TOKENS</a></li>			
+					<li class="header__btn header__btn--signup modal-toggle" data-openpopup="signuplogin" data-popup="signup"><a href="#">REGISTER</a></li>			
 				</ul>
 			</nav> 
 		</div>		
@@ -73,7 +73,7 @@
 
 						</div>
 					</div>
-{% if error %}
+<!-- {% if error %}
 <br />
 <br />
 <p class="error-message">
@@ -86,13 +86,13 @@
 <br />
 <br />
 <h3 style="text-align: left; width: 800px; color: #000; letter-spacing: 0.0625em; font-family: 'Source Sans Pro', sans-serif;">
-
-1. Sign Up | <strong style="color: #b77dff;">2. KYC |</strong> 3. Terms | 4. Finish</h3>	
+<strong style="color: #b77dff;">
+Login</strong></h3>	
 <br />
 <br />
 	
 
-<form method="POST" action="{% url 'signup' %}">
+<form method="POST" action="">
 {% csrf_token %}
 Email:
 
@@ -106,24 +106,25 @@ Password:
 
 <br />
 <br />
-	<input type="password" class="form-control input-lg" name="password1" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
+	<input type="password" class="form-control input-lg" name="password" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
 <br />
 <br />
 
-Confirm Password:
-
 <br />
-<br />
-	<input type="password" class="form-control input-lg" name="password2" min_length="7" style="height: 40px; width: auto; max-width: 200px;" />
-
-<br />
-<br />
-<br />
-<input class='btn btn--red-bg' type="submit" value="Sign Up!" />
-<br />
-<br />
-<li><a href="{% url 'login' %}">Already have an account?</a></li>
+<input class='btn btn--red-bg' type="submit" value="Login!" />
 </form>
+<br />
+<br />
+<li><a href="">Don't have an account yet?</a></li>
+</form> -->
+
+<div class="container">
+    <h1>Logged out</h1>
+    <p>
+        You have logged out!
+    </p>
+</div>
+
 					</div>
 				    </div>	
 				</div>

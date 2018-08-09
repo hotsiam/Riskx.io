@@ -107,13 +107,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'youremail@gmail.com'
-EMAIL_HOST_PASSWORD = 'yourpassword'
-EMAIL_PORT = 587
-
-
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -148,5 +141,22 @@ try:
     from local_settings import*
 except ImportError:
     pass
+
+LOGIN_REDIRECT_URL = '/'
+
+LOGIN_URL = '/account/login/'
+
+LOGIN_EXEMPT_URLS = (
+    r'^account/logout/$',
+    r'^account/register/$',
+    r'^account/reset-password/$',
+    r'^account/reset-password/done/$',
+    r'^account/reset-password/confirm/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>.+)/$',
+    r'^account/reset-password/complete/$',
+)
+
+EMAIL_HOST = 'localhost'
+EMAIL_PORT = 1025
+
 
 
