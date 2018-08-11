@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'rex.urls'
@@ -158,5 +160,10 @@ LOGIN_EXEMPT_URLS = (
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
 
+GOOGLE_RECAPTCHA_SECRET_KEY = '6Ld9WmkUAAAAANLDfNJmOT9ftOzksDYuxADbSJBX'
 
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'info@riskx.io'
+EMAIL_HOST_PASSWORD = '9nnoyp57'
+EMAIL_PORT = 587

@@ -140,7 +140,7 @@ h6{
 }
 /* MODIFIER - header */
 .header--sticky{
-	background-color:#2e1d6c;
+	background-color:#2e1d6cad;
     box-shadow: 0 4px 10px 0px rgba(0,0,0,0.03);
     -moz-box-shadow: 0 4px 10px 0px rgba(0,0,0,0.03);
     -webkit-box-shadow: 0 4px 10px 0px rgba(0,0,0,0.03);
@@ -341,7 +341,7 @@ h6{
   visibility: hidden;
   text-align:left;
   padding:5px 0;
-  background-color:#fff;
+  background-color:#000000b0;
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.10);
   -moz-box-shadow:    0px 0px 10px 1px rgba(0,0,0,0.10); 
   box-shadow:         0px 0px 10px 1px rgba(0,0,0,0.10);
@@ -387,7 +387,67 @@ h6{
 .header__menu ul ul li:last-child a {
  border-bottom:none; 
  }
- 
+
+
+.um * {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+}
+.um * {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+}
+.um *, .um *:before, .um *:after {
+    box-sizing: content-box;
+}
+.um * {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+}
+.um-field-area {
+    position: relative;
+    word-wrap: break-word;
+}
+ .um-field-checkbox-option, .um-field-radio-option {
+ 	margin: 0 0 0 36px;
+    line-height: 24px;
+    color: #888!important;
+    display: block;
+ }
+ .um * {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+}
+.um {
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 30px!important;
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+    opacity: 0;
+}
+.um .um-tip:hover, .um .um-field-radio.active:not(.um-field-radio-state-disabled) i, .um .um-field-checkbox.active:not(.um-field-radio-state-disabled) i, .um .um-member-name a:hover, .um .um-member-more a:hover, .um .um-member-less a:hover, .um .um-members-pagi a:hover, .um .um-cover-add:hover, .um .um-profile-subnav a.active, .um .um-item-meta a, .um-account-name a:hover, .um-account-nav a.current, .um-account-side li a.current span.um-account-icon, .um-account-side li a.current:hover span.um-account-icon, .um-dropdown li a:hover, i.um-active-color, span.um-active-color
+{
+    color: #3ba1da;
+}
+.um-field-checkbox-state i, .um-field-radio-state i {
+    font-size: 24px;
+    line-height: 24px;
+    height: 24px;
+    color: #aaa;
+    transition: all .2s linear;
+}
+.um * {
+    -webkit-font-smoothing: antialiased!important;
+    -moz-osx-font-smoothing: grayscale!important;
+}
+.um *, .um *:before, .um *:after {
+    box-sizing: content-box;
+}
+
 /*===============================================*/
 /* 4. SECTION 	 						 */
 /*===============================================*/
@@ -2284,6 +2344,52 @@ svg.svg-features-top {
 	-ms-user-select: none;
 	user-select: none;
 }
+input[type=checkbox] {
+display:none;
+}
+input[type=checkbox] + label
+{
+background: #999;
+height: 16px;
+width: 16px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+input[type=checkbox]:checked + label
+{
+background: #0080FF;
+text-decoration: line-through;
+height: 16px;
+width: 16px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+input[type=checkbox]:checked + label + label {
+    text-decoration: line-through;
+}
+
+
+label p {
+  display: inline block;
+}
+
+.myCheckbox input {
+    // display: none;
+    // Better than display: none for accessibility reasons
+    position: relative;
+    z-index: -9999;
+}
+
+.myCheckbox span {
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url("link_to_image");
+}
+
+.myCheckbox input:checked + span {
+    background: url("link_to_another_image");
+}
 
 .input__label-content {
 	position: relative;
@@ -3058,7 +3164,7 @@ border-bottom:1px #ebeced solid;
   height:auto;
   margin:0px;
   padding: 0 35px;
-  color:#000;
+  color:#7ff21a;
 }
  .header__menu > ul > li {
  float: none;

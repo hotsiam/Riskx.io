@@ -2,14 +2,50 @@ from django import forms
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
+from accounts.models import UserProfile
+
 class RegistrationForm(UserCreationForm):
-    email = forms.EmailField(required=True)
+    email = forms.EmailField(required=True, widget=forms.TextInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter email...'
+        }
+
+    ))
+    password1 = forms.CharField(max_length=32, widget=forms.PasswordInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Enter password...'
+        }
+
+    ))
+    password2 = forms.CharField(max_length=32, widget=forms.PasswordInput(
+        attrs={
+            'class': 'form-control',
+            'placeholder': 'Confirm password...'
+        }
+
+    ))
+
+    class Meta:
+        password = forms.CharField(widget=forms.PasswordInput)
+        model = User
+        widgets = {
+            'password': forms.PasswordInput(),
+        }
 
     class Meta:
         model = User
+        widgets = {
+        'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter email...'}),
+        'first_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First name...'}),
+        'last_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last name...'}),
+        'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter email...'}),
+        'password1': forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Enter password...'}),
+        'password2': forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Enter password...'}),
+}
         fields = (
-            'first_name',
-            'last_name',
+            'username',
             'email',
             'password1',
             'password2'
@@ -17,9 +53,7 @@ class RegistrationForm(UserCreationForm):
 
     def save(self, commit=True):
         user = super(RegistrationForm, self).save(commit=False)
-        user.first_name = self.cleaned_data['first_name']
-        user.last_name = self.cleaned_data['last_name']
-        user.email = self.cleaned_data['email'].widget.attrs.update({'class': 'form-control input-lg'})
+        user.email = self.cleaned_data['email']
 
         if commit:
             user.save()

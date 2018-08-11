@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <title>Riskx.io | Distributing Risk</title>
 <link rel="shortcut icon" action="{% static 'images/favicon.ico' %}" />
-<!-- <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}"> -->
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
 <link rel="stylesheet" href="{% static 'css/swiper.css' %}">
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <link rel="stylesheet" href="{% static 'style2.css' %}"/>
@@ -124,19 +124,47 @@ Confirm Password:
 <br />
 <li><a href="">Already have an account?</a></li>
 </form> -->
-
-<div class="container">
+<section>
+<div class="container" style="position: relative; top: -100px;">
     <h1>Register</h1>
-    <form method="post">
+    <form method="post" style="width: 550px; height: 18px">
         {% csrf_token %}
         {{ form.as_p }}
+        {{ from.errors }}
+    <br />
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="g-recaptcha" data-sitekey="6Ld9WmkUAAAAAMawjMTAC8uZfySS1kNjPM-xtLLI
+"></div>
 <br />
-        <button class='btn btn--red-bg' type="submit">Submit</button>
+
+<span class="um-field-checkbox-state">
+<i class="um-icon-android-checkbox-outline"></i>
+</span>
+
+<div class="um-field-area">
+<label class="um-field-checkbox active">
+<input type="checkbox" name="use_gdpr_agreement" value="1">
+<span class="um-field-checkbox-state">
+<i class="um-icon-android-checkbox-outline"></i>
+</span>
+</label>
+<div class="um-clear"></div>
+<div class="um-clear"></div>
+</div>
+
+<div class="myCheckbox">
+<input class="um-field-checkbox-option" type='checkbox' name='thing' value='valuable' id="thing"/><label for="thing"></label><label style="width:500px"> By clicking you agree to our<a href="../terms"> Terms of Services</a> and <a href="../privacy"> Privacy Policy</a</label>
+</div>
+<br />
+<br />
+        <button href="../" class='btn btn--red-bg' type="submit">Submit</button>
         <br />
         <br />
 		<li><a href="../login">Already have an account?</a></li>
     </form>
 </div>
+</section>
 					</div>
 				    </div>	
 				</div>
