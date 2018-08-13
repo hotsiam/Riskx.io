@@ -25,7 +25,7 @@ SECRET_KEY = 'drhva+87=*r5ow182_5_pvt0eyqmc#wrxoae1eq*+r*ip=qcys'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['139.59.179.88', '127.0.0.1', 'riskx.io', 'www.riskx.io']
+ALLOWED_HOSTS = ['139.59.179.88', '127.0.0.1', 'riskx.io', 'www.riskx.io', '127.0.0.1:7545']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'crispy_forms',
+
 ]
 
 MIDDLEWARE = [
@@ -165,5 +166,5 @@ GOOGLE_RECAPTCHA_SECRET_KEY = '6Ld9WmkUAAAAANLDfNJmOT9ftOzksDYuxADbSJBX'
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'info@riskx.io'
-EMAIL_HOST_PASSWORD = '9nnoyp57'
+EMAIL_HOST_PASSWORD = 'doopiloop'
 EMAIL_PORT = 587

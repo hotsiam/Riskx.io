@@ -1,0 +1,599 @@
+{
+  "contractName": "RiskxTokenSale",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "tokenContract",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_tokenContract",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806101ad83398101806040528101908080519060200190929190505050336000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555080600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505060ea806100c36000396000f300608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806355a373d6146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058206e4ae268f17e22069561787727b47ca00abb38678fbdf61e66a19971679aabcf0029",
+  "deployedBytecode": "0x608060405260043610603f576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806355a373d6146044575b600080fd5b348015604f57600080fd5b5060566098565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16815600a165627a7a723058206e4ae268f17e22069561787727b47ca00abb38678fbdf61e66a19971679aabcf0029",
+  "sourceMap": "54:236:2:-;;;132:156;8:9:-1;5:2;;;30:1;27;20:12;5:2;132:156:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;202:10;194:5;;:18;;;;;;;;;;;;;;;;;;232:14;216:13;;:30;;;;;;;;;;;;;;;;;;132:156;54:236;;;;;;",
+  "deployedSourceMap": "54:236:2:-;;;;;;;;;;;;;;;;;;;;;;;;97:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;97:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.23;\n\nimport \"./RiskxToken.sol\";\n\ncontract RiskxTokenSale {\n\taddress admin;\n\tRiskxToken public tokenContract;\n\n\tfunction RiskxTokenSale(RiskxToken _tokenContract) public {\n\t\tadmin = msg.sender;\n\t\ttokenContract = _tokenContract; \n\t\t// Token contract\n\t\t// Token Price\n\t}\n}",
+  "sourcePath": "/Users/zanemassey/Desktop/riskxtoken/contracts/RiskxTokenSale.sol",
+  "ast": {
+    "absolutePath": "/Users/zanemassey/Desktop/riskxtoken/contracts/RiskxTokenSale.sol",
+    "exportedSymbols": {
+      "RiskxTokenSale": [
+        265
+      ]
+    },
+    "id": 266,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 244,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/zanemassey/Desktop/riskxtoken/contracts/RiskxToken.sol",
+        "file": "./RiskxToken.sol",
+        "id": 245,
+        "nodeType": "ImportDirective",
+        "scope": 266,
+        "sourceUnit": 243,
+        "src": "26:26:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 265,
+        "linearizedBaseContracts": [
+          265
+        ],
+        "name": "RiskxTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 247,
+            "name": "admin",
+            "nodeType": "VariableDeclaration",
+            "scope": 265,
+            "src": "81:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 246,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "81:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 249,
+            "name": "tokenContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 265,
+            "src": "97:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RiskxToken_$242",
+              "typeString": "contract RiskxToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 248,
+              "name": "RiskxToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 242,
+              "src": "97:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RiskxToken_$242",
+                "typeString": "contract RiskxToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 263,
+              "nodeType": "Block",
+              "src": "190:98:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 257,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 254,
+                      "name": "admin",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 247,
+                      "src": "194:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 255,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 280,
+                        "src": "202:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 256,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "202:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "194:18:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 258,
+                  "nodeType": "ExpressionStatement",
+                  "src": "194:18:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 261,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 259,
+                      "name": "tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 249,
+                      "src": "216:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RiskxToken_$242",
+                        "typeString": "contract RiskxToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 260,
+                      "name": "_tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 251,
+                      "src": "232:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RiskxToken_$242",
+                        "typeString": "contract RiskxToken"
+                      }
+                    },
+                    "src": "216:30:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RiskxToken_$242",
+                      "typeString": "contract RiskxToken"
+                    }
+                  },
+                  "id": 262,
+                  "nodeType": "ExpressionStatement",
+                  "src": "216:30:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 264,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "RiskxTokenSale",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 252,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 251,
+                  "name": "_tokenContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 264,
+                  "src": "156:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_RiskxToken_$242",
+                    "typeString": "contract RiskxToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 250,
+                    "name": "RiskxToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 242,
+                    "src": "156:10:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RiskxToken_$242",
+                      "typeString": "contract RiskxToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "155:27:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:2"
+            },
+            "scope": 265,
+            "src": "132:156:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 266,
+        "src": "54:236:2"
+      }
+    ],
+    "src": "0:290:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/zanemassey/Desktop/riskxtoken/contracts/RiskxTokenSale.sol",
+    "exportedSymbols": {
+      "RiskxTokenSale": [
+        265
+      ]
+    },
+    "id": 266,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 244,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".23"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "absolutePath": "/Users/zanemassey/Desktop/riskxtoken/contracts/RiskxToken.sol",
+        "file": "./RiskxToken.sol",
+        "id": 245,
+        "nodeType": "ImportDirective",
+        "scope": 266,
+        "sourceUnit": 243,
+        "src": "26:26:2",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 265,
+        "linearizedBaseContracts": [
+          265
+        ],
+        "name": "RiskxTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 247,
+            "name": "admin",
+            "nodeType": "VariableDeclaration",
+            "scope": 265,
+            "src": "81:13:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_address",
+              "typeString": "address"
+            },
+            "typeName": {
+              "id": 246,
+              "name": "address",
+              "nodeType": "ElementaryTypeName",
+              "src": "81:7:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_address",
+                "typeString": "address"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "constant": false,
+            "id": 249,
+            "name": "tokenContract",
+            "nodeType": "VariableDeclaration",
+            "scope": 265,
+            "src": "97:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_RiskxToken_$242",
+              "typeString": "contract RiskxToken"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 248,
+              "name": "RiskxToken",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 242,
+              "src": "97:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_RiskxToken_$242",
+                "typeString": "contract RiskxToken"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 263,
+              "nodeType": "Block",
+              "src": "190:98:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 257,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 254,
+                      "name": "admin",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 247,
+                      "src": "194:5:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 255,
+                        "name": "msg",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 280,
+                        "src": "202:3:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_magic_message",
+                          "typeString": "msg"
+                        }
+                      },
+                      "id": 256,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "sender",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "202:10:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "src": "194:18:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "id": 258,
+                  "nodeType": "ExpressionStatement",
+                  "src": "194:18:2"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 261,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 259,
+                      "name": "tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 249,
+                      "src": "216:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RiskxToken_$242",
+                        "typeString": "contract RiskxToken"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 260,
+                      "name": "_tokenContract",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 251,
+                      "src": "232:14:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_contract$_RiskxToken_$242",
+                        "typeString": "contract RiskxToken"
+                      }
+                    },
+                    "src": "216:30:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RiskxToken_$242",
+                      "typeString": "contract RiskxToken"
+                    }
+                  },
+                  "id": 262,
+                  "nodeType": "ExpressionStatement",
+                  "src": "216:30:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 264,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "RiskxTokenSale",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 252,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 251,
+                  "name": "_tokenContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 264,
+                  "src": "156:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_RiskxToken_$242",
+                    "typeString": "contract RiskxToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 250,
+                    "name": "RiskxToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 242,
+                    "src": "156:10:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_RiskxToken_$242",
+                      "typeString": "contract RiskxToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "155:27:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:2"
+            },
+            "scope": 265,
+            "src": "132:156:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 266,
+        "src": "54:236:2"
+      }
+    ],
+    "src": "0:290:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-07-27T08:24:22.161Z"
+}

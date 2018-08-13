@@ -1,0 +1,7 @@
+
+
+{
+  "server": {
+    "baseDir": ["./rex/static/js", "./build/contracts"]
+  }
+}'

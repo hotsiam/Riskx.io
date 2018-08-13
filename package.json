@@ -1,4 +1,6 @@
-{
+import json
+
+json_data = '{
   "name": "riskx.io",
   "version": "1.0.0",
   "description": "Riskx ERC20 Token, crowdsale contracts, and cryptocurrency",
@@ -29,3 +31,5 @@
   },
   "homepage": "https://github.com/hotsiam/riskx.io#readme"
 }
+
+data = json.load(json_data)

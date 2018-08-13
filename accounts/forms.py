@@ -37,12 +37,12 @@ class RegistrationForm(UserCreationForm):
     class Meta:
         model = User
         widgets = {
-        'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter email...'}),
+        'username': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter a username...'}),
         'first_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'First name...'}),
         'last_name': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Last name...'}),
-        'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter email...'}),
+        'email': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your email...'}),
         'password1': forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Enter password...'}),
-        'password2': forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Enter password...'}),
+        'password2': forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Confirm password...'}),
 }
         fields = (
             'username',

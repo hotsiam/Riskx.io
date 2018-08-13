@@ -18,24 +18,24 @@
 <link rel="stylesheet" href="{% static 'style.css' %}">
 <link rel="stylesheet" href="{% static 'style2.css' %}"/>
 <link rel="stylesheet" href="{% static 'style4.css' %}"/>
-<link rel="stylesheet" href="{% static 'responsive.css' %}"/>
-<link rel="stylesheet" href="{% static 'style5.css' %}"/>
+
+
 <link rel="stylesheet" href="{% static 'bootstrap-combined.min.css' %}"/>
 <!-- Font -->	
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CPoppins:400,500" rel="stylesheet">
 <!-- Stylesheets -->
-<link href="{% static 'bootstrap.css' %}" rel="stylesheet">
-<link href="{% static 'common-css/ionicons.css'%}" rel="stylesheet">
-<link rel="stylesheet" href="{% static 'jquery.classycountdown.css' %}" />	
-<link href="{% static 'styles.css' %}" rel="stylesheet">
-<link href="{% static 'responsive.css' %}" rel="stylesheet">
+
+
+
+
+
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
 <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
 </head>
 <body>
 	<header class="header">
 		<div class="header__content header__content--fluid-width">
-			<div class="header__logo-title" style="color:#7ff21a" href="#intro"><li href="/">RISKX.IO</li></div>
+			<div class="header__logo-title" style="color:#7ff21a" href="#intro">RISKX.IO</div>
 			<div class="header__logo-title2"><img src="{% static 'images/riskx-icon.png' %}"/></div>
 
 			<div class="header__logo-title3">
@@ -92,7 +92,7 @@
 				<div class="intro">
 				    <div class="intro__content">
 					<div class="intro__title">
-						<strong>Decentralisation Of Credit & Debt To Manage</strong> 
+						<strong style="color: #a567fd;">Decentralisation Of Credit & Debt To Help Manage</strong> 
 						<div class="intro__title__words-animation">
 							<span class="intro__title--word-animated word">Risk</span>
 							<span class="intro__title--word-animated word">Expenses</span>
@@ -190,12 +190,16 @@
 									</div>
 
 									<div class="hiw-titles__slide swiper-slide">
-									<span>Senior Software 
-									Engineer</span>
+									<span>Technical Lead</span>
 									</div>
 
 									<div class="hiw-titles__slide swiper-slide">
 									<span>Product Advisor</span>
+									</div>
+
+
+									<div class="hiw-titles__slide swiper-slide">
+									<span>Developer and COO</span>
 									</div>
 								</div>	
 							</div>								   
@@ -238,13 +242,23 @@ Technical Lead
 											</pre>				
 									</div>
 									<div class="hiw-content__slide swiper-slide">
-<pre>
+											<pre>
 <strong><div class="grid__icon">Rachel Jones: 
 Product Advisor
 
 <img src="{% static 'images/icons/icons-64-violet/rachel.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/" class="link-in"></a><a href="https://www.linkedin.com/in/rachel-jones-aaa23b123/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
 </strong>
-											</pre>								
+											</pre>				
+									</div>
+									<div class="hiw-content__slide swiper-slide">
+											<pre>
+<strong><div class="grid__icon">Blair Houlton: 
+Developer and Chief Operating Officer
+
+<img src="{% static 'images/icons/icons-64-violet/blair.png' %}" alt="" title=""/></div><a href="https://www.linkedin.com/in/blair-houlton-664949169/" class="link-in"></a><a href="https://www.linkedin.com/in/blair-houlton-664949169/" target="_blank"><img src="{% static 'images/social/white/linkedin.png' %}" alt="" title=""/></a>
+</strong>
+											</pre>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -447,24 +461,34 @@ Product Advisor
 				<div class="form-group">
 					<div class="input-group">
 
-						<input id="numberOfToken" class="form-control input-lg" type="number" name="number" value="4000" min="4000" pattern="[0-9]" style="height: 4px; width: auto; position: relative; top: -5px; right: 10px;     border-radius: 15px; background: #fff; padding: 20px; max-width: 200px;">
+						<input id="numberOfToken" class="form-control input-lg" type="number" name="number" value="4000" min="1" pattern="[0-9]" style="height: 4px; width: auto; position: relative; top: -5px; right: 10px;     border-radius: 15px; background: #fff; padding: 20px; max-width: 200px;">
 						</input>
 						<span class="input-group-btn" style="padding-top: 24px;">
-							<button type="submit" class="btn btn-primary bt-lg" href="accounts/register" style="background: #b77dff; height: 50px;">Buy Tokens</button>
+							<button type="submit" class="btn btn-primary bt-lg" style="background: #b77dff; height: 50px;">Buy Tokens</button>
 						</span>
 					</div>
 				</div>	
 			<p><span class="tokens-sold"></span> / <span class="tokens-available"></span>Tokens Sold</p>
 			<hr>
 			<p id="accountAddress"></p>
-			<div class="section__description section__description--centered" style="width:700px">
-				<h3>Please make an initial donation to help with smart-contract audit costs and other minor operational costs, to help this ICO launch successfully.</h3>
-<br />
-				<p style="text-align: center; color:#00c6ff">Bitcoin address: 1PEGURxvE8YNnvex9LchFh9HtmDF1hEaZf
-<br />
-				Nano address: xrb_1x99ybkuuytkh3c83gjqp7qe1auxa4ytr1kzzyxkp8eb5a1mser484cqfike
-<br />
-				Ethereum address: 0x25760f50df6004cb9bafbc58030e1418f486637e
+			<script>
+			(function() {
+			  var RiskxTokenSale = "RiskxTokenSale.json";
+			  $.getJSON( RiskxTokenSale, {
+			    tags: "accountAddress",
+			    tagmode: "any",
+			    format: "json"
+			  })
+			    .done(function( data ) {
+			      $.each( data.items, function( i, item ) {
+			        $( "<accounts>" ).attr( "build", item.media.m ).appendTo( "" );
+			        if ( i === 3 ) {
+			          return false;
+			        }
+			      });
+			    });
+			})();
+			</script>
 		</div>
 	</div>      
 </section>
@@ -834,9 +858,9 @@ Product Advisor
 <script src="{% static 'js/swiper.custom.js' %}"></script>
 <script src="{% static 'js/animation.js' %}"></script>
 <script src="{% static 'js/menu.js' %}"></script>
-<script src="{% static 'js/countdown.js' %}"></script>
+
 <script src="{% static 'js/jquery-3.1.1.min.js' %}"></script>
-<script src="{% static 'js/bootstrap.js' %}"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="{% static 'js/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/web3.min.js' %}"></script>
