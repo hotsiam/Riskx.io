@@ -1,6 +1,4 @@
-import json
-
-json_data = '{
+{
   "name": "riskx.io",
   "version": "1.0.0",
   "description": "Riskx ERC20 Token, crowdsale contracts, and cryptocurrency",

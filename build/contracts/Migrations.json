@@ -1,6 +1,4 @@
-import json
-
-json_data = '{
+{
   "contractName": "Migrations",
   "abi": [
     {
@@ -1387,5 +1385,3 @@ json_data = '{
   "schemaVersion": "2.0.1",
   "updatedAt": "2018-07-27T08:24:22.164Z"
 }
-
-data = json.load(json_data)
