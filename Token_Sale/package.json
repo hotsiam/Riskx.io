@@ -13,5 +13,9 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "react-svg-inline": "^2.1.1",
+    "truffle": "^4.1.14"
   }
 }
