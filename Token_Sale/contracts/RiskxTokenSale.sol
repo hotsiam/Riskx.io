@@ -23,8 +23,8 @@ contract RiskxTokenSale {
 
 	function buyTokens(uint256 _numberOfTokens) public payable {
 			require(msg.value == multiply(_numberOfTokens, tokenPrice));
-			require(tokenContract.transfer(msg.sender, _numberOfTokens));
 			require(tokenContract.balanceOf(this) >= _numberOfTokens);
+			require(tokenContract.transfer(msg.sender, _numberOfTokens));
 			
 			tokensSold += _numberOfTokens;
 
@@ -35,6 +35,6 @@ contract RiskxTokenSale {
 		require(msg.sender == admin);
 		require(tokenContract.transfer(admin, tokenContract.balanceOf(this)));
 		
-		selfdestruct(admin);
+		admin.transfer(address(this).balance);
 	}
 }
